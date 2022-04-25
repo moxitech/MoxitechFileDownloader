@@ -1,0 +1,27 @@
+﻿<Window x:Class="FileDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileDownloader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="271" Margin="38,39,0,0" Stroke="Black" VerticalAlignment="Top" Width="729"/>
+        <Label Content="Путь загрузки:" HorizontalAlignment="Left" Margin="50,49,0,0" VerticalAlignment="Top"/>
+        <Label Content="Папка загрузок" HorizontalAlignment="Left" Margin="50,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="Конечное название файла:" HorizontalAlignment="Left" Margin="50,140,0,0" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="progressivebar" HorizontalAlignment="Left" Height="20" Margin="50,225,0,0" VerticalAlignment="Top" Width="418"/>
+        <TextBox x:Name="textbox1" Text="example : https://site.com/files/text.txt" HorizontalAlignment="Left" Margin="213,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="489" FlowDirection="LeftToRight" HorizontalScrollBarVisibility="Visible">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="textboxdownload" Text="example : C://download// or название папки на локальном диске C" HorizontalAlignment="Left" Margin="213,99,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="489"/>
+        <TextBox x:Name="textboxfile" HorizontalAlignment="Left" Margin="213,144,0,0" TextWrapping="Wrap" Text="example : text.pdf " VerticalAlignment="Top" Width="246"/>
+        <Button Content="Использовать папку загрузок" HorizontalAlignment="Left" Margin="587,143,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Помощь" HorizontalAlignment="Left" Margin="702,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.724,0.813" Click="Button_Click_3"/>
+        <Button Content="Загрузить!" HorizontalAlignment="Left" Margin="597,196,0,0" VerticalAlignment="Top" Height="58" Width="130" Click="Button_Click_1"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="422,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.667,3.399" Click="Button_Click_2"/>
+    </Grid>
+</Window>
